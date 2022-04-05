@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone
+    </title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="nodemodule/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+        <div class="nav-left">
+            <a href="#">
+                <img src="img/logo.png" alt="social media logo" title="social media logo" class="logo">
+            </a>
+            <ul>
+                <li>
+                    <img src="img/notification.png" alt="notification" title="Notifiacation">
+                </li>
+                <li>
+                    <img src="img/inbox.png" alt="inbox" title="Inbox">
+                </li>
+                <li>
+                    <img src="img/video.png" alt="Video" title="Video">
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="img/search.png" alt="Search">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon" onclick="settingMenuToggle()">
+                <img src="img/profile-1.jpg" alt="profile-pic">
+                <span class="nav-user-status"></span>
+            </div>
+        </div>
+     <!--setting Menu-->   
+        <div class="setting-menu">
+            <div id="dark-btn" class="dark-btn-on">
+                <span></span>
+
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-proflie">
+                    <div>
+                        <img src="img/profile-1.jpg">
+                    </div>
+                    <div>
+                        <p>Yogesh Gaikwad</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-proflie">
+                    <div>
+                        <img src="img/feedback.png">
+                    </div>
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">help us to improve the new Designs.</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="img/setting.png" class="setting-icon">
+                    <a href= "#">Setting & Privacy <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/help.png" class="setting-icon">
+                    <a href= "#">help & Support<img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/display.png" class="setting-icon">
+                    <a href= "#">Display & Accessibility <img src="img/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="img/logout.png" class="setting-icon">
+                    <a href= "#">Logout <img src="img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>""
+    <!--container-->
+    <div class="container">
+        <!--left sidebar-->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="img/news.png"> <span>Latest News</span></a>
+                <a href="#"><img src="img/friends.png"><span>Friends</span></a>
+                <a href="#"><img src="img/group.png"><span>Groups</span></a>
+                <a href="#"><img src="img/marketplace.png"><span>marketplace </span></a>
+                <a href="#"><img src="img/watch.png"><span>Watch</span></a>
+                <a href="#"> <span>See more..</span></a>
+            </div>
+            <div class="shortcut-link">
+                <p>Your shortcuts</p>
+                <a href="#"><img src="img/shortcut-1.png"></span>Web Developers</span></a>
+                <a href="#"><img src="img/shortcut-2.png">Web Design course</a>
+                <a href="#"><img src="img/shortcut-3.png">Full Stack Devlopments</a>
+                <a href="#"><img src="img/shortcut-4.png">Website Expert</a>
+            </div>
+        </div>
+
+        <!--main sidebar-->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story-1">
+                    <img src="img/upload.png" alt="upload file">
+                    <p>post story</p>
+                </div>
+                <div class="story story-2">
+                    <img src="img/member-1.png" alt="upload file">
+                    <p>alison</p>
+                </div>
+                <div class="story story-3">
+                    <img src="img/member-2.png" alt="upload file">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story-4">
+                    <img src="img/member-3.png" alt="upload file">
+                    <p>Samona</p>
+                </div>
+                <div class="story story-5">
+                    <img src="img/member-4.png" alt="upload file">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-proflie">
+                    <div>
+                        <img src="img/profile-pic.png">
+                    </div>
+                    <div>
+                        <p>Yogesh Gaikwad</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's n your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"> <img src="img/live-video.png">Live Video</a>
+                        <a href="#"> <img src="img/photo.png">Photo/Video</a>
+                        <a href="#"> <img src="img/feeling.png">felling / Activity </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-proflie">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Yogesh Gaikwad</p>
+                            <span>Jule 19 2021, 11:59 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe<span> @Yog Media Tutorials</span> Youtube channels to watch more videos
+                    on website Devlopments and UI
+                    Designs.<a href="#">#Yog media</a>
+                    <a href="#">#YouTube channels</a>
+                </p>
+                <img src="img/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="like">120</div>
+                        <div><img src="img/comments.png" alt="like">45</div>
+                        <div><img src="img/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-proflie">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Yogesh Gaikwad</p>
+                            <span>Jule 19 2021, 11:59 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Like and share this video with friends,tag <span> @Yog Media Tutorials</span>
+                    Facebook page on your post.
+                    ask your doubts in the comments.
+                    <a href="#">#Yog media</a>
+                    <a href="#">#YouTube channels</a>
+                </p>
+                <img src="img/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="like">205</div>
+                        <div><img src="img/comments.png" alt="like">68</div>
+                        <div><img src="img/share.png" alt="like">105</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-proflie">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Yogesh Gaikwad</p>
+                            <span>Jule 21 2021, 11:59 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe<span> @Yog Media Tutorials</span> Youtube channels to watch more videos
+                    on website Devlopments and UI
+                    Designs.<a href="#">#Yog media</a>
+                    <a href="#">#YouTube channels</a>
+                </p>
+                <img src="img/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="like">120</div>
+                        <div><img src="img/comments.png" alt="like">45</div>
+                        <div><img src="img/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-proflie">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Yogesh Gaikwad</p>
+                            <span>Jule 25 2021, 11:59 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe<span> @Yog Media Tutorials</span> Youtube channels to watch more videos
+                    on website Devlopments and UI
+                    Designs.<a href="#">#Yog media</a>
+                    <a href="#">#YouTube channels</a>
+                </p>
+                <img src="img/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="like">120</div>
+                        <div><img src="img/comments.png" alt="like">45</div>
+                        <div><img src="img/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-proflie">
+                        <img src="img/profile-pic.png">
+                        <div>
+                            <p>Yogesh Gaikwad</p>
+                            <span>Jule 29 2021, 11:59 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subscribe<span> @Yog Media Tutorials</span> Youtube channels to watch more videos
+                    on website Devlopments and UI
+                    Designs.<a href="#">#Yog media</a>
+                    <a href="#">#YouTube channels</a>
+                </p>
+                <img src="img/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="img/like-blue.png" alt="like">120</div>
+                        <div><img src="img/comments.png" alt="like">45</div>
+                        <div><img src="img/share.png" alt="like">20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="img/profile-pic.png"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button type="button" class="load-more-btn">Load More </button>
+
+
+        </div>
+        <!--right sidebar-->
+        <div class="right-sidebar">
+            <div class="right-sidebar-title">
+                <h4 class="right-sidebar-title-header">Events</h4>
+                <a href="#">See all...</a>
+            </div>
+
+            <div class="right-sidebar-events">
+                <div class="left-event">
+                    <h4>18th</h4> <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4 class="right-sidebar-title-header">Social Media</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i> willson Tech park</p>
+                    <a href="#">More Info..</a>
+                </div>
+
+            </div>
+            <div class="right-sidebar-events">
+                <div class="left-event">
+                    <h4>22th</h4> <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4 class="right-sidebar-title-header">Mobile Marketing</h4>
+                    <p> <i class="fas fa-map-marker-alt"></i> willson Tech park</p>
+                    <a href="#">More Info..</a>
+                </div>
+
+            </div>
+            <div class="right-sidebar-title">
+                <h4 class="right-sidebar-title-header">Advertisement</h4>
+                <a href="#">close</a>
+            </div>
+            <img src="img/advertisement.png" class="right-sidebar-ads">
+
+            <div class="right-sidebar-title">
+                <h4 class="right-sidebar-title-header">convesation</h4>
+                <a href="#">Hide chat</a>
+            </div>
+
+            <div class="online-list">
+                <img src="img/member-1.png" alt="profile-pic">
+                <span class="online"></span>
+
+                <div>
+                    <p>alison Mina</p>
+                </div>
+            </div>
+            <div class="online-list">
+                <img src="img/member-2.png" alt="profile-pic">
+                <span class="online"></span>
+                <p>Jackson Aston </p>
+            </div>
+            <div class="online-list">
+                <img src="img/member-3.png" alt="profile-pic">
+                <span class="online"></span>
+                <p>alison Mina </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2021 -Yog Media Tutorials Youtube Channels</p>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
